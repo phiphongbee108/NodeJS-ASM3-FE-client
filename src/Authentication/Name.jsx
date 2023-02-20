@@ -29,12 +29,12 @@ function Name(props) {
 					to={'/manage'}>
 					Manage
 				</Link> */}
-        <Link
+        {/* <Link
           className="dropdown-item border-0 transition-link"
           to={"/history"}
         >
           History
-        </Link>
+        </Link> */}
       </div>
     </li>
   );

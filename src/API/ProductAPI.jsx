@@ -2,7 +2,7 @@ import axiosClient from "./axiosClient";
 
 const ProductAPI = {
   getAPI: () => {
-    const url = "https://oval-legend-web.glitch.me/api/product";
+    const url = "https://nodejs-asm3-be.glitch.me/api/product";
     return axiosClient.get(url);
   },
 
@@ -12,7 +12,7 @@ const ProductAPI = {
   },
 
   getDetail: (id) => {
-    const url = `https://oval-legend-web.glitch.me/api/product/getproduct/${id}`;
+    const url = `https://nodejs-asm3-be.glitch.me/api/product/getproduct/${id}`;
     return axiosClient.get(url);
   },
 

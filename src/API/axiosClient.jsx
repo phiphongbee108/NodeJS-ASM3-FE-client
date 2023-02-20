@@ -4,7 +4,7 @@ import queryString from 'query-string';
 // Set up default config for http requests here
 // Please have a look at here `https://github.com/axios/axios#requestconfig` for the full list of configs
 const axiosClient = axios.create({
-	baseURL: 'https://oval-legend-web.glitch.me',
+	baseURL: 'https://nodejs-asm3-be.glitch.me',
 	headers: {
 		'content-type': 'application/json',
 	},
