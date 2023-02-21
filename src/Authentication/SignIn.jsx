@@ -52,12 +52,12 @@ function SignIn(props) {
         password: password,
       };
       const response = await UserAPI.postSignIng(params);
-
-      const user = response.data.user;
+      
+      // const user = response.user;
 
       response !== "false" ? setRedirect(true) : setRedirect(false);
       response !== "false"
-        ? sessionStorage.setItem("currentuser", JSON.stringify(user))
+        ? sessionStorage.setItem("currentuser", JSON.stringify(response))
         : sessionStorage.removeItem("currentuser");
       window.location.reload();
     };

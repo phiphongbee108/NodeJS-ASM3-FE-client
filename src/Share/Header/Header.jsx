@@ -30,7 +30,7 @@ function Header(props) {
 
   //Get idtemp từ redux khi user chưa đăng nhập
   var idTemp = useSelector((state) => state.Cart.id_user);
-
+  
   const query =
     sessionStorage.getItem("currentuser") === null
       ? []
@@ -103,12 +103,12 @@ function Header(props) {
 
             {login && <Name />}
             {login ? <LoginLink /> : <LogoutLink />}
-            {login ? <li className="nav-item">
+            {/* {login ? <li className="nav-item">
               <Link className="nav-link" to={`/history`}>
                 <i className="fas fa-clipboard-list mr-1 text-gray"></i>
                 History
               </Link>
-            </li> : ""}
+            </li> : ""} */}
             {/* <li className="nav-item">
               <Link className="nav-link" to={`/history`}>
                 <i className="fas fa-clipboard-list mr-1 text-gray"></i>
